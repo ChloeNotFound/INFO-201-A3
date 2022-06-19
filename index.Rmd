@@ -1,0 +1,26 @@
+---
+title: "Assignment 3 "
+output: html_document
+---
+
+>Introduction 
+
+One of the sharpest manifestations of racism in the United States is its prison system. A complex set of social and political structures, including the over-policing of individuals of color and the war on drugs, have led to the disproportionate incarceration of people of color. The [dataset](https://raw.githubusercontent.com/vera-institute/incarceration-trends/master/incarceration_trends.csv) I chose for this project is collected from County and jurisdiction-level jail data, which I think that it represents a lower level of the jails but with more specific and accurate records. This project mainly focuses on the growth of the black, Asian American, and white population in the jail from 1970 to 2018. And the report also analyses the female jail population change in geographical distribution to determine whether there is an over-policing of people of color and gender. 
+
+>Summary
+
+__CHARTS__
+
+In this project, I specifically analyzed the black population, Asian American population, and white population in jail between 1990 and 2018. By comparing the rate of the growth, I would be able to summarize whether there is over-policing against the people of color. As the data shown below, in 1990, the total black population in jail is 419968499, the total Asian American and Pacific Island jail population is 4122698507, and the white population in jail is 420892048. To get a more obvious comparison, I decided to get a bigger range of the year period. Hence, I took the data from 2018. I calculated the black population in jail in 2018 is 425766571, the Asian American and Pacific Island population in jail is 418067929, and the white population is 426690120. After that, I used these data to calculate the growth rate with the formula _growth rate = (present value - past value)/past value * 100_. The percentage for the black, Asian American, and white populations are 1.38%, 1.41%, and 1.37%. By looking at the results, I found out that the Asian American population in jail has the fastest growth, and the black population and white population have a similar growth rate. 
+
+The last chart is made to discover the relationship between the white jail population and the Asian American jail population in 2018. As the chart shows, there is a positive correlation between these two variables, which means that when the white jail population increases, Asian American and Pacific Island jail populations will also largely increase based on certain correlation. The reason that I choose to show this relationship is that I found that Asian American and Pacific Island jail populations grow at the fastest speed and white jail populations grows slowest.
+
+```{r, echo=FALSE, eval=TRUE, code = readLines("analysis.r")}
+```
+__MAP__
+
+Besides the social concern of race over-policing, female jail population distribution also triggers common social attention. The map that I wish to show is the female jail population change by the state over 30 years. By representing the population range in different colors, from light blue to dark blue, it is clear to display which state has the biggest female jail population change from 1988 to 2018. As the map shows above, Texas has the greatest female jail population change in the past years. Overall, southern regions have a greater female jail population than north, eastern regions have greater female jail population than west.  
+
+>Conclusion 
+
+This report contains an analysis of the jail population of people of color and the female jail population change by states. By exploring the data, the report concludes that Asian American and Pacific Island jail population has been growing at the fastest speed, next is the black jail population, and the white jail population growth has a relatively slow speed. Despite there is a distinction between different races, the growth rate is virtually similar. Hence, the over-policing is not as apparent as people discuss in the public. Moreover, the map also shows the geographic distribution of the female jail population. Besides Texas, other states have a relatively regular population change from 1988 to 2018. 
